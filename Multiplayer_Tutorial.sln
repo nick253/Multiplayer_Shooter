@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplayer_Tutorial", "Multiplayer_Tutorial.csproj", "{E6E9ECB8-2068-49A9-BB1D-DE6107D273BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6E9ECB8-2068-49A9-BB1D-DE6107D273BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E9ECB8-2068-49A9-BB1D-DE6107D273BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E9ECB8-2068-49A9-BB1D-DE6107D273BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E9ECB8-2068-49A9-BB1D-DE6107D273BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
