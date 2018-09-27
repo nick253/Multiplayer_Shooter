@@ -44,11 +44,6 @@ public class PlayerController : NetworkBehaviour {
             CmdFire();
         }
 
-        else if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            CmdJump();
-        }
-
         //Checking if player is local 2nd time
         if (isLocalPlayer == true)
         {
@@ -58,7 +53,8 @@ public class PlayerController : NetworkBehaviour {
             }
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                this.transform.Translate(Vector3.up * Time.deltaTime * 30f);
+                this.transform.Translate(Vector3.up * (Time.deltaTime/10) * 500, Space.World);
+                this.transform.Translate(Vector3.forward * (Time.deltaTime / 10) * 200);
             }
 
             if (triggeringAnotherPlayer && Input.GetKeyDown(KeyCode.E))
@@ -89,14 +85,6 @@ public class PlayerController : NetworkBehaviour {
             triggeringAnotherPlayer = false;
             otherPlayer = null;
         }
-    }
-
-
-    [Command]
-    public void CmdJump ()
-    {
-
-
     }
 
     [Command]
